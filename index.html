@@ -483,7 +483,7 @@
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
-          <svg class="modal-btn-icon" width="24" height="24">
+          <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -543,21 +543,24 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <label class="form-agreement">
+          <div class="form-checkbox">
             <input
               class="checkbox visually-hidden"
               type="checkbox"
-              name="user-agreement"
-              value="false"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <span class="form-agreement-checkbox">
-              <svg class="form-agreement-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-vector"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="form-agreement-link">Privacy Policy</a>
-          </label>
+            <label class="form-agreement" for="user-privacy">
+              <span class="form-agreement-checkbox">
+                <svg class="form-agreement-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="form-agreement-link">Privacy Policy</a>
+            </label>
+          </div>
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
